@@ -1,14 +1,28 @@
 {
   "name": "css-translate",
   "version": "0.0.0",
-  "description": "",
+  "description": "A very basic css translate string builder",
   "main": "translate.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Kory Nunn (http://korynunn.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "grape": "^0.1.10"
+  },
+  "dependencies": {
+    "unitr": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/KoryNunn/css-transform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/css-transform/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/css-transform"
 }

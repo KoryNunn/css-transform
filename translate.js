@@ -3,12 +3,13 @@ var unitr = require('unitr'),
         '3d': '3d',
         'x': 'X',
         'y': 'Y',
-        'z': 'Z'
+        'z': 'Z',
+        '2d': '',
         '': ''
     };
 
 module.exports = function(type, x, y, z){
-    if(!isNaN(type){
+    if(!isNaN(type)){
         z = y;
         y = x;
         x = type;
@@ -19,13 +20,12 @@ module.exports = function(type, x, y, z){
 
     var args = [];
 
-    x == null && args.push(unitr(x));
-    y == null && args.push(unitr(y));
-    z == null && args.push(unitr(z));
+    x != null && args.push(unitr(x));
+    y != null && args.push(unitr(y));
+    z != null && args.push(unitr(z));
 
-    return
-        'translate' +
-        type +
+    return 'translate' +
+        types[type] +
         '(' +
         args.join(',') +
         ')';
