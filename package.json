@@ -1,6 +1,6 @@
 {
   "name": "css-translate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A very basic css translate string builder",
   "main": "translate.js",
   "directories": {
